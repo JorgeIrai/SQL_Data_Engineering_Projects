@@ -7,7 +7,7 @@ FROM
 LEFT JOIN 
     company_dim cd ON cd.company_id = jpf.company_id
 WHERE
-    jpf.job_country = 'Spain'
+    jpf.job_country = 'France'
 GROUP BY 
     cd.name
 HAVING 
