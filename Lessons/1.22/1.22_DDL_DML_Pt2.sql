@@ -24,8 +24,7 @@ LEFT JOIN data_jobs.company_dim AS cd
     ON jpf.company_id = cd.company_id;
 
 SELECT COUNT(*) 
-FROM staging.job_postings_flat
-LIMIT 10;
+FROM staging.job_postings_flat;
 
 
 --VIEW
@@ -38,6 +37,7 @@ JOIN
     staging.priority_roles pr ON jpf.job_title_short = pr.role_name
 WHERE
     pr.priority_lvl = 1;
+
 
 
 SELECT 

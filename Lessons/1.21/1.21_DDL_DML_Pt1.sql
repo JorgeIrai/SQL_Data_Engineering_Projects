@@ -8,7 +8,6 @@ CREATE DATABASE IF NOT EXISTS jobs_mart;
 
 SHOW DATABASES;
 
-
 SELECT *
 FROM information_schema.schemata;
 

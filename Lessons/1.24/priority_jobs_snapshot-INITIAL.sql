@@ -1,3 +1,5 @@
+-- .read Lessons/1.24/priority_jobs_snapshot-INITIAL.sql
+
 CREATE OR REPLACE TABLE main.priority_jobs_snapshot (
     job_id INTEGER PRIMARY KEY,
     job_title_short VARCHAR,
