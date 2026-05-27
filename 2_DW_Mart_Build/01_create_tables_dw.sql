@@ -14,7 +14,7 @@ CREATE TABLE company_dim (
 
 CREATE TABLE skills_dim (
     skill_id    INTEGER     PRIMARY KEY,
-    skill       VARCHAR,
+    skills       VARCHAR,
     type        VARCHAR
 );
 
@@ -29,7 +29,7 @@ CREATE TABLE job_postings_fact (
     job_schedule_type       VARCHAR,
     job_work_from_home      BOOLEAN,
     search_location         VARCHAR,
-    job_poted_date          TIMESTAMP,
+    job_posted_date          TIMESTAMP,
     job_no_degree_mention   BOOLEAN,
     job_health_insurance    BOOLEAN,
     job_country             VARCHAR,
