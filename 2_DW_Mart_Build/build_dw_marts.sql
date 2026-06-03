@@ -1,4 +1,4 @@
--- duckdb dw_marts.duckdb -c ".read build_dw_marts.sql"
+-- Local Execution: duckdb dw_marts.duckdb -c ".read build_dw_marts.sql"
 
 
 -- Step 1 - DW - Create star schema tables
@@ -18,3 +18,11 @@
 
 -- Step 6 - Update priority roles mart
 .read 06_update_priority_mart.sql
+
+
+-- Create Data Warehouse in Motherduck:
+-- duckdb md:
+-- CREATE DATABASE dw_marts;
+
+-- Upload DW into motherduck
+-- duckdb md:dw_marts -c ".read build_dw_marts.sql"
